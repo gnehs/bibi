@@ -1,0 +1,17 @@
+extends layout
+block head
+	script(src='//cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js')
+	script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+	script(src="//cdnjs.cloudflare.com/ajax/libs/cheet.js/0.3.3/cheet.min.js")
+	script(src='/javascripts/index.js')
+block content
+	header 甲.幣幣.tw
+	main 
+		h1= title
+			.subheader 世界美好而完美
+		button.bibi 幣幣
+		.count 已有 
+			span.counter(bibi-count=bibiCount) #{bibiCount.toLocaleString('en-US')}
+			|  次幣幣點擊
+		#bibi $
+	footer 由幣幣的小夥伴 ❤️ 製作

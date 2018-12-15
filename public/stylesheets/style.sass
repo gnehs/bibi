@@ -1,0 +1,67 @@
+body
+	font: 14px Helvetica, Arial, sans-serif  
+	background-color: rgb(245, 185, 29)
+	color: #FFF
+header,footer
+	height: 64px
+	font-size: 32px
+	line-height: 64px
+	padding-left: 64px
+	background-color: #0000003b
+main
+	padding: 64px    
+	text-shadow: 0 0 11px rgba(0, 0, 0, 0.25)
+	height: calc(100vh - 64px * 4)
+	overflow: hidden
+	h1	
+		font-size: 4em
+		margin-bottom: 16px
+		.subheader 
+			font-size: .5em //4*.5
+	button.bibi	
+		--bibi-color: #ea8703
+		border: 3px solid var(--bibi-color)
+		border-radius: 10px
+		background-color: rgba(255, 255, 255, 0.1)
+		font-size: 2em
+		color: var(--bibi-color)  
+		line-height: 1.5
+		outline: 0    
+		margin: .25em 0
+		&:hover
+			--bibi-color: #F79513
+		&:active
+			--bibi-color: #ca7403
+@media (max-height: 512px)
+	main
+		height: auto
+a
+	color: #00B7FF
+.count
+	line-height: 32px
+	.counter 
+		font-size: 24px
+#bibi,.bibi-logo
+	--bibi-size: 550px
+	width: var(--bibi-size)
+	height: var(--bibi-size)
+	line-height: var(--bibi-size)
+	text-align: center
+	font-size: calc(var(--bibi-size) * .7)
+	color: #F79513
+	border: calc(var(--bibi-size) * .06) solid #F79513
+	border-radius: 500em    
+	font-family: noto    
+	font-weight: bold    
+	z-index: -1
+	bottom: 0
+	right: 0    
+	position: fixed    
+	transform: translate(calc(var(--bibi-size) * -.06),calc(var(--bibi-size) * .3)) rotate(-38deg)   
+	box-shadow: 0 0 0 calc(var(--bibi-size) * .06) rgb(245, 185, 29) 
+	background-color: rgb(245, 185, 29)
+	text-shadow: none
+	user-select: none
+@media (max-width: 650px)
+	#bibi
+		--bibi-size: 200px
